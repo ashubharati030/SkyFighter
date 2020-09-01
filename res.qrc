@@ -5,8 +5,8 @@
     </qresource>
     <qresource prefix="/images">
         <file>bgn2.jpg</file>
-        <file>enemy_edit.png</file>
-        <file>buuletn.jpeg</file>
         <file>player_edit.png</file>
+        <file>bullt.png</file>
+        <file>enemy_edit.png</file>
     </qresource>
 </RCC>

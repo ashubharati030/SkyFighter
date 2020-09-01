@@ -22,13 +22,19 @@ Enemy::Enemy(QGraphicsItem *parent):QObject(),QGraphicsPixmapItem(parent)
 
 void Enemy::move()
 {
-    setPos(x(),y()+5);
+    setPos(x(),y()+8);
 
     if(pos().y() == 600 )
     {
         game->health->decrease();
+
         scene()->removeItem(this);
         delete this;
         //qDebug() <<"enemy deleted";
     }
+    if(game->health->getHealth()<=0)
+    {
+        game->display2();
+    }
+
 }

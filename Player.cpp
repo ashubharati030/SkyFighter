@@ -27,8 +27,11 @@ void Player::keyPressEvent(QKeyEvent *event)
     {
         //create a bullet
         Bullet *bullet = new Bullet();
-        bullet->setPos(x()+50,y());
+        bullet->setPos(x()+75,y()-10);
+        Bullet *bullet1 = new Bullet();
+        bullet1->setPos(x()+40,y()-10);
         scene()->addItem(bullet);
+        scene()->addItem(bullet1);
     }
 }
 

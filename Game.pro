@@ -19,6 +19,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Bullet.cpp \
+    Button.cpp \
     Enemy.cpp \
     Game.cpp \
     Health.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
 
 HEADERS += \
     Bullet.h \
+    Button.h \
     Enemy.h \
     Game.h \
     Health.h \

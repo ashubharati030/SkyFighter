@@ -10,8 +10,8 @@ extern Game * game; //there is an external global obj ptr called game , here use
 
 Bullet::Bullet(QGraphicsItem *parent):QObject(),QGraphicsPixmapItem(parent)
 {
-    setPixmap(QPixmap(":/images/buuletn.jpeg"));
-    setPos(x()-40,y());
+    setPixmap(QPixmap(":/images/bullt.png"));
+    setPos(x(),y());
     QTimer * timer = new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(move()));
 
